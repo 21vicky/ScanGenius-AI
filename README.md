@@ -127,6 +127,7 @@ The TrOCR model will be downloaded automatically on its first run if it is not a
 
 ![ScanGenius AI OCR Results](assets/scangenius-results.png)
 
+### OCR Recognition
 ---
 
 ## 🎯 Project Goal
