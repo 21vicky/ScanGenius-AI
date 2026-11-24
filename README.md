@@ -4,6 +4,10 @@
 
 ScanGenius AI is an AI-powered handwritten text recognition application that converts handwritten notes into editable digital text using Microsoft's TrOCR model.
 
+It combines deep learning and computer vision to detect handwritten text regions, recognize handwriting, and extract digital text through an interactive Streamlit interface.
+
+---
+
 ## ✨ Features
 
 - 📤 Upload handwritten images (PNG, JPG, JPEG)
@@ -15,16 +19,22 @@ ScanGenius AI is an AI-powered handwritten text recognition application that con
 - ⬇️ Download extracted text
 - 🎨 Interactive Streamlit interface
 
+---
+
 ## 🛠️ Technologies Used
 
-- Python
-- Streamlit
-- PyTorch
-- Hugging Face Transformers
-- Microsoft TrOCR
-- OpenCV
-- NumPy
-- Pillow (PIL)
+| Technology | Purpose |
+|---|---|
+| Python | Core programming |
+| Streamlit | Interactive web interface |
+| PyTorch | Deep learning framework |
+| Hugging Face Transformers | Pretrained AI model |
+| Microsoft TrOCR | Handwritten text recognition |
+| OpenCV | Image preprocessing and line detection |
+| NumPy | Image and numerical operations |
+| Pillow (PIL) | Image handling |
+
+---
 
 ## 🧠 How It Works
 
@@ -33,7 +43,17 @@ ScanGenius AI is an AI-powered handwritten text recognition application that con
 3. Detect individual handwritten text regions using OpenCV.
 4. Pass detected regions to Microsoft's TrOCR model.
 5. Convert handwriting into digital text.
-6. Review, edit and download the extracted result.
+6. Review, edit, and download the extracted result.
+
+---
+
+## 🔄 Project Workflow
+
+The following diagram illustrates the Git workflow used to manage and publish ScanGenius AI.
+
+![ScanGenius AI Git Workflow](assets/scangenius-workflow.png)
+
+---
 
 ## 📂 Project Structure
 
@@ -41,17 +61,22 @@ ScanGenius AI is an AI-powered handwritten text recognition application that con
 ScanGenius-AI/
 │
 ├── app.py
+│
 ├── utils/
 │   ├── __init__.py
 │   └── ocr_engine.py
 │
 ├── assets/
-│   └── scangenius-dashboard.png
+│   ├── scangenius-dashboard.png
+│   ├── scangenius-results.png
+│   └── scangenius-workflow.png
 │
 ├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
+
+---
 
 ## ⚙️ Installation
 
@@ -90,19 +115,25 @@ streamlit run app.py
 
 The TrOCR model will be downloaded automatically on its first run if it is not already cached.
 
-## 📸 Screenshots
+---
 
 ## 📸 Screenshots
 
 ### Application Dashboard
-![Dashboard](assets/scangenius-dashboard.png)
+
+![ScanGenius AI Dashboard](assets/scangenius-dashboard.png)
 
 ### OCR Recognition Results
-![OCR Results](assets/scangenius-results.png)
+
+![ScanGenius AI OCR Results](assets/scangenius-results.png)
+
+---
 
 ## 🎯 Project Goal
 
-To explore practical applications of AI and computer vision by building a handwritten text recognition system using pretrained deep learning models.
+To explore practical applications of artificial intelligence and computer vision by building a handwritten text recognition system using pretrained deep learning models.
+
+---
 
 ## 🔮 Future Improvements
 
@@ -111,6 +142,8 @@ To explore practical applications of AI and computer vision by building a handwr
 - Better full-page text segmentation.
 - Multi-page document recognition.
 - PDF upload and text extraction.
+
+---
 
 ## 👨‍💻 Author
 
@@ -122,4 +155,4 @@ GitHub: [21vicky](https://github.com/21vicky)
 
 ---
 
-*Built with ❤️ using Python, Streamlit and Hugging Face Transformers.*
+*Built with ❤️ using Python, Streamlit, PyTorch and Hugging Face Transformers.*
